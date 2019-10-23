@@ -36,7 +36,26 @@ namespace StockMarketData
 
         private void StartDownload_Button_Click(object sender, RoutedEventArgs e)
         {
-            string Selected_Website = (string)ComboBoxWebsite.SelectedValue;  
+            SeleniumEnhanced.SeleniumEnhanced SE = new SeleniumEnhanced.SeleniumEnhanced();
+            SE.StartWebDriver();
+
+            string StockText = Stock_TextBox.Text.ToUpper();
+            string Selected_Website = ComboBoxWebsite.Text;
+
+
+            switch (Selected_Website)
+            {
+                case "Yahoo":
+                    SE.driver.Navigate().GoToUrl("https://finance.yahoo.com/quote/SPY/history?p=SPY");
+                    break;
+                default:
+                    Console.WriteLine("No option selected");
+                    break;
+            
+
+            }
+                
+                
 
 
         }

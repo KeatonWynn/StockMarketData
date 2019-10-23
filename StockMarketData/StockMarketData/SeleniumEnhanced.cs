@@ -21,9 +21,7 @@ namespace SeleniumEnhanced
         private const bool def_exit_on_error = true;
         private bool failure_flag = false;
                 
-
-        //TESTTTTTTTTTTTTTTTTTTTTTTTTTT           
-        
+                
         public void StartWebDriver(bool headless = false)
         {
             try
@@ -59,27 +57,10 @@ namespace SeleniumEnhanced
 
             catch (OpenQA.Selenium.WebDriverException)
             {
-                //just continue
+                //just continue, application already closed
             }
         }
-
-        public string GetText(string xpath)
-        {
-            string text = driver.FindElementByXPath(xpath).Text;
-            return text;
-        }
-
-        public void Click(string xpath)
-        {
-            driver.FindElementByXPath(xpath).Click();
-        }
-
-        public void SendKeys(string xpath, string keys_to_send)
-        {
-            driver.FindElementByXPath(xpath).SendKeys(keys_to_send);
-        }
-
-
+               
         public string GetFunction(
             string function, 
             string xpath, 
