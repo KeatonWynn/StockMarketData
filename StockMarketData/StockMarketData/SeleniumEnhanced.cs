@@ -11,9 +11,9 @@ namespace SeleniumEnhanced
     class SeleniumEnhanced
     {
 
-        private static string userHMF = Environment.UserName;
-        private static string download_dir = "C:/Users/" + userHMF + "/Downloads";
-        private static string chromedriver_dir = "C:/Users/" + userHMF + "/ImportFiles/";
+        private static readonly string userHMF = Environment.UserName;
+        private static readonly string download_dir = "C:/Users/" + userHMF + "/Downloads";
+        private static readonly string chromedriver_dir = "C:/Users/" + userHMF + "/ImportFiles/";
         public ChromeDriver driver;
         private const int def_max_tries = 10;
         private const int def_sec_to_wait = 2;

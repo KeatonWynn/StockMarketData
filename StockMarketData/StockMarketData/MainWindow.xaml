@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StockMarketData"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="400">
+        Title="MainWindow" Height="600" Width="400">
     <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30">
         
         <StackPanel HorizontalAlignment="Center">
@@ -23,7 +23,7 @@
                 <!--YAHOO OPTIONS-->
                 
                 <Border BorderThickness="1" BorderBrush="Black" Margin="0 10 0 0">
-                    <StackPanel >
+                    <StackPanel Margin="10" >
                     
                         
                         <Label Content="Options:"  FontWeight="Bold" />
@@ -60,16 +60,23 @@
                     </StackPanel>
                 </Border>
             </DockPanel>
-            <Label Content="Download Folder"/>
-            <Button Content="Select Directory"/>
-            <Label Content="Destination Folder"/>
-            <Button Content="Select Directory" />
-            <Label Content="Filename (optional)"/>
-            <TextBox  x:Name="Textbox_FileName" Text="Enter file name here" GotFocus="Textbox_FileName_GotFocus"/>
-            <Button x:Name ="StartDownload_Button" Content="Start Download" Click="StartDownload_Button_Click"/>
-            <TextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <!--FILE OPTIONS-->
+            <Border BorderThickness="1" BorderBrush="Black" Margin="0 10 0 0">
+            <StackPanel Margin="10">
+                <Label Content="File:"  FontWeight="Bold" />
+                <Label Content="Filename (Default: StockData)"/>
+                <TextBox  x:Name="Textbox_FileName" Text="StockData" GotFocus="Textbox_FileName_GotFocus"/>
+                <Label Content="Download Folder"/>
+                <Button Content="Select Directory"/>
+                <Label Content="Destination Folder"/>
+                <Button Content="Select Directory" />                    
                 
-            </TextBox>
+            </StackPanel>
+            </Border>
+            
+            <Button x:Name ="StartDownload_Button" Content="Start Download" Click="StartDownload_Button_Click"/>
+            <TextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+
         </StackPanel>
         
     </Grid>
