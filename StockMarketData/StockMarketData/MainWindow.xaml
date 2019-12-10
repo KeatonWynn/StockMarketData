@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StockMarketData"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="400">
+        ResizeMode="CanMinimize"
+        Title="MainWindow" Height="700" Width="400">
     <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30">
         
         <StackPanel HorizontalAlignment="Center">
@@ -29,7 +30,7 @@
                     <StackPanel Margin="10" >
                     
                         
-                        <Label Content="Options"  FontWeight="Bold" HorizontalAlignment="Center"/>
+                        <Label Content="Stock Pull Options"  FontWeight="Bold" HorizontalAlignment="Center"/>
                         <Separator/>
                         <DockPanel Margin="0 0 0 0">
                             <Label Content="Time Period: "/>
@@ -71,18 +72,18 @@
                     <Separator Margin="10 0 10 10" />
                     <DockPanel>
                         <Label Content="Filename: "/>
-                        <TextBox  x:Name="Textbox_FileName" Text="StockData" GotFocus="Textbox_FileName_GotFocus"/>
+                        <TextBox  x:Name="Textbox_FileName" Text="StockData" GotFocus="Textbox_FileName_GotFocus" Width="150" HorizontalAlignment="Right" />
                     </DockPanel>
-                <Label Content="Download Folder"/>
-                    <Button Content="Select Directory" x:Name="SelectDirectory_Button" Click="SelectDirectory_Button_Click"/>
-                <Label Content="Destination Folder"/>
-                <Button Content="Select Directory" />                    
+                <Label Content="Download Folder:"/>
+                    <Button Content="Select Directory" Margin="10 0 10 10" x:Name="SelectDirectory_Button" Click="SelectDirectory_Button_Click"/>
+                <Label Content="Destination Folder:"/>
+                    <Button Content="Select Directory" Margin="10" x:Name="SelectDestination_Button" Click="SelectDestination_Button_Click"/>                    
                 
             </StackPanel>
             </Border>
             
-            <Button x:Name ="StartDownload_Button" Content="Start Download" Click="StartDownload_Button_Click"/>
-            <TextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <Button x:Name ="StartDownload_Button" FontWeight="Bold" Margin ="0 10 0 0" FontSize="16" Height="30" Content="Start Download" Click="StartDownload_Button_Click"/>
+            <TextBox x:Name="Log_TextBox" Text="Message Logs:" HorizontalAlignment="Stretch" Margin ="0 10 0 0" Height="75" IsReadOnly="True" BorderBrush="Black"  VerticalAlignment="Stretch"/>
 
         </StackPanel>
         

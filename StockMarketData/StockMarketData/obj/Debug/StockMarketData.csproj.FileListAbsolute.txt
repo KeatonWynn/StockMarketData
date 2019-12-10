@@ -34,3 +34,11 @@ C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockM
 C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\obj\Debug\StockMarketData.csproj.CopyComplete
 C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\obj\Debug\StockMarketData.exe
 C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\obj\Debug\StockMarketData.pdb
+C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\bin\Debug\Gat.Controls.OpenDialog.dll
+C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\bin\Debug\Microsoft.WindowsAPICodePack.dll
+C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\bin\Debug\Ookii.Dialogs.Wpf.dll
+C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\bin\Debug\Microsoft.WindowsAPICodePack.xml
+C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\bin\Debug\Microsoft.WindowsAPICodePack.Shell.xml
+C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\bin\Debug\Ookii.Dialogs.Wpf.xml
+C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\obj\Debug\StockMarketData.csprojAssemblyReference.cache
