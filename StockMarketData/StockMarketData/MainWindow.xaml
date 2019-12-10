@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:StockMarketData"
         mc:Ignorable="d"
         ResizeMode="CanMinimize"
-        Title="MainWindow" Height="700" Width="400">
+        Title="MainWindow" Height="720" Width="400">
     <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Margin="30">
         
         <StackPanel HorizontalAlignment="Center">
@@ -75,16 +75,16 @@
                         <TextBox  x:Name="Textbox_FileName" Text="StockData" GotFocus="Textbox_FileName_GotFocus" Width="150" HorizontalAlignment="Right" />
                     </DockPanel>
                 <Label Content="Download Folder:"/>
-                    <Button Content="Select Directory" Margin="10 0 10 10" x:Name="SelectDirectory_Button" Click="SelectDirectory_Button_Click"/>
+                    <Button Content="Select Download Directory" Margin="10 0 10 10" x:Name="SelectDirectory_Button" Click="SelectDirectory_Button_Click"/>
                 <Label Content="Destination Folder:"/>
-                    <Button Content="Select Directory" Margin="10" x:Name="SelectDestination_Button" Click="SelectDestination_Button_Click"/>                    
+                    <Button Content="Select Destination Directory" Margin="10" x:Name="SelectDestination_Button" Click="SelectDestination_Button_Click"/>                    
                 
             </StackPanel>
             </Border>
             
-            <Button x:Name ="StartDownload_Button" FontWeight="Bold" Margin ="0 10 0 0" FontSize="16" Height="30" Content="Start Download" Click="StartDownload_Button_Click"/>
+            <Button x:Name ="StartDownload_Button" FontWeight="Bold" Margin ="0 10 0 0" Background="LightGreen" FontSize="16" Height="30" Content="Start Download" Click="StartDownload_Button_Click"/>
             <TextBox x:Name="Log_TextBox" Text="Message Logs:" HorizontalAlignment="Stretch" Margin ="0 10 0 0" Height="75" IsReadOnly="True" BorderBrush="Black"  VerticalAlignment="Stretch"/>
-
+            <Button x:Name="Exit_Button" Content="Exit" Margin="0 10 0 0" Width="40" HorizontalAlignment="Right" Click="Exit_Button_Click"/>
         </StackPanel>
         
     </Grid>
