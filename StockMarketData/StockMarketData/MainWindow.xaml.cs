@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Microsoft.Win32;
 
 namespace StockMarketData
 {
@@ -25,6 +26,7 @@ namespace StockMarketData
             InitializeComponent();
         }
 
+        string SelectFolderText;
         
         //empties textbox upon click
         public void Textbox_FileName_GotFocus(object sender, RoutedEventArgs e)
@@ -34,7 +36,14 @@ namespace StockMarketData
             tb.GotFocus -= Textbox_FileName_GotFocus;
         }
 
+        //Select Directory button click action 
+        public void SelectDirectory_Button_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog o = new OpenFileDialog();
+
+        }
         
+
         private void StartDownload_Button_Click(object sender, RoutedEventArgs e)
         {
             SeleniumEnhanced.SeleniumEnhanced SE = new SeleniumEnhanced.SeleniumEnhanced();
@@ -48,7 +57,9 @@ namespace StockMarketData
             switch (Selected_Website)
             {
                 case "Yahoo":
+                    Console.WriteLine($"Starting {StockText} Download");
                     SE.driver.Navigate().GoToUrl(yahoo_url);
+                    Console.WriteLine($"Downloading File");
                     SE.GetFunction("Click", "//*[@id=\"Col1-1-HistoricalDataTable-Proxy\"]/section/div[1]/div[2]/span[2]/a/span", "Download");
                     SE.Quit();
                     break;

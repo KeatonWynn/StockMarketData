@@ -21,7 +21,6 @@ C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockM
 C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\bin\Debug\StockMarketData.pdb
 C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\bin\Debug\WebDriver.dll
 C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\bin\Debug\WebDriver.xml
-C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\obj\Debug\StockMarketData.csprojAssemblyReference.cache
 C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\obj\Debug\StockMarketData.csproj.ResolveComReference.cache
 C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\obj\Debug\MainWindow.g.cs
 C:\Users\hmf05046\Source\Repos\KeatonWynn\StockMarketData\StockMarketData\StockMarketData\obj\Debug\App.g.cs
