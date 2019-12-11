@@ -36,16 +36,16 @@
                             <Label Content="Time Period: "/>
                             <StackPanel Margin="2">
                                 <Label Content="Start Date" HorizontalContentAlignment="Center"  />
-                                <DatePicker/>
+                                <DatePicker x:Name="StartDate_DatePicker" />
                             </StackPanel>
                             <StackPanel Margin="2">
                                 <Label Content="End Date" HorizontalContentAlignment="Center"/>
-                                <DatePicker/>
+                                <DatePicker  x:Name="EndDate_DatePicker" />
                             </StackPanel>
                         </DockPanel>
                         <DockPanel>
-                            <Label Content="Show: " Width="150" HorizontalAlignment="Right"/>
-                            <ComboBox>
+                            <Label Content="Show: "  Width="150" HorizontalAlignment="Right"/>
+                            <ComboBox x:Name="ShowComboBox" SelectedIndex="0">
                                 <ComboBoxItem Content="Historical"/>
                                 <ComboBoxItem Content="Dividends Only"/>
                                 <ComboBoxItem Content="Stock Splits"/>
@@ -53,7 +53,7 @@
                         </DockPanel>
                         <DockPanel>
                             <Label Content="Frequency: " Width="150" HorizontalAlignment="Right"/>
-                            <ComboBox>
+                            <ComboBox x:Name="FreqComboBox" SelectedIndex="0">
                                 <ComboBoxItem Content="Daily"/>
                                 <ComboBoxItem Content="Weekly"/>
                                 <ComboBoxItem Content="Monthly"/>
